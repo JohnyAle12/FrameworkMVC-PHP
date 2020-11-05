@@ -5,9 +5,9 @@
     | Application Name
     |--------------------------------------------------------------------------
     |
-    | Este archivo se encarga de conectar los modelos y las vistas. 
-    | 
-    | 
+    | Este archivo se encarga de conectar los modelos y las vistas.
+    |
+    |
     */
 
     class Controller{
@@ -26,6 +26,6 @@
     		}else{
     			die('La vista '.$view.' no existe');
     		}
-    		
+
     	}
     }

@@ -5,19 +5,19 @@
     | Application Name
     |--------------------------------------------------------------------------
     |
-    | Este archivo esta creado como el core de la aplicacion, tiene varias  
+    | Este archivo esta creado como el core de la aplicacion, tiene varias
     | configuraciones relevantes a la aplicacion.
-    | 
+    |
     */
 
-    /*  Mapear la URL  ingresada en el navegador 
+    /*  Mapear la URL  ingresada en el navegador
 		1. controlador
 		2. metodo
 		3. parametro
     */
 
 	class Core{
-		protected $actualController='InicioController';
+		protected $actualController='IndexController';
 		protected $actualMethod='index';
 		protected $actualParameter=[];
 
@@ -26,7 +26,7 @@
 			$url= $this->getUrl();
 
 			//busca si el controlador existe
-			if(file_exists('../app/controllers/'.ucwords($url[0]).'Controller.php')){
+			if(file_exists('../app/controllers/'.ucwords($url[0]).'Controller.php') && $url){
 				$this->actualController=ucwords($url[0]).'Controller';
 				//elimina el controlador actual para darle paso al nuevo existente
 				unset($url[0]);

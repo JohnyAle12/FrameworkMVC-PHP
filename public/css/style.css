@@ -1,0 +1,16 @@
+
+a{
+	cursor: pointer;
+}
+
+.table-style{
+	font-size: 13px;
+}
+
+#table-container{
+	overflow-y: auto;
+}
+
+#formcontainer{
+	width: 50%;
+}

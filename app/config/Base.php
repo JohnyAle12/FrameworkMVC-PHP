@@ -7,7 +7,7 @@
     |
     | Este archivo esta creado para la configuracion de conexion de
     | la base de datos, tomando credenciales del archivo config.php
-    | 
+    |
     */
 
     class Base{
